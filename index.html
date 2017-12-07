@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+	<!--标题-->
+	<meta charset="utf-8">
+	<title>Central Committee</title>
+	<!--css库-->
+	<link rel="stylesheet" href="libs/bootstrap-dist/css/bootstrap.min.css">
+	<!--css样式表文件-->
+	<link rel="stylesheet" type="text/css" href="libs/datatables/jquery.dataTables.css"/>
+    <link rel="stylesheet" type="text/css" href="libs/d3-tip/d3-tip.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<!--填充主体的内容-->
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Central Committee Related Visualization</a>
+	    </div>
+	    <p class="navbar-text navbar-right" style="font-size: 15px; position: absolute; right: 5%;"><strong>Sara Han</strong></p>
+    </div>
+	</nav>
+	<div class="peopleMap" id="galaxy-svg">
+		<div style="position:absolute; top: -6%; left: 41%; text-align: center; font-size: 15px;">
+		    <span>K-Means Cluster</span>  
+		</div> 
+	</div>
+
+	<div class="statistics" id = "statisticsInfo"></div>
+	<div class="peopleInfo">
+		<div id="name" style="text-align: center; font-size: 15px;">
+		    <span></span>  
+		</div> 
+		<table id="table" class="display" cellspacing="0" width="100%" style="border: 1px rgb(95, 88, 89) groove;"></table>
+	</div>
+
+	<div class="timeline" id="peopleTimeline">
+
+	</div>
+		
+
+	<!--加载用到的js库-->
+	<script type="text/javascript" src="libs/d3-dist/d3.v3.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-dist/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/datatables/jquery.dataTables.js"/></script>
+    <script type="text/javascript" src="libs/d3-tip/index.js"></script>
+    <script type="text/javascript" src="libs/underscore/underscore.js"></script>
+    <script type="text/javascript" src="scripts/radarchart.js"></script>
+    <script type="text/javascript" src="scripts/radar-render.js"></script>
+    <script type="text/javascript" src="scripts/table-render.js"></script>
+    <script type="text/javascript" src="scripts/timeline-render.js"></script>
+    <script type="text/javascript" src="scripts/cluster.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
